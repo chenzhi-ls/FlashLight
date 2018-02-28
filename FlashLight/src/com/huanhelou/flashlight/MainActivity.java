@@ -83,7 +83,8 @@ public class MainActivity extends Activity {
 			originalScreenBrightness = LightUtils.getScreenBrightness(mActivity);
 			LightUtils.setScreenBrightness(mActivity, 255);
 
-			new TimeCount(60 * 1000 * 3, 1000).start();
+			// 这里默认设置为5分钟 以后可以添加控件手动设置
+			new TimeCount(60 * 1000 * 5, 1000).start();
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
