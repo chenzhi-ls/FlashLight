@@ -1,7 +1,5 @@
 package com.huanhelou.flashlight;
 
-import java.util.TimerTask;
-
 import android.app.Activity;
 import android.media.AudioManager;
 import android.media.SoundPool;
@@ -85,7 +83,7 @@ public class MainActivity extends Activity {
 			originalScreenBrightness = LightUtils.getScreenBrightness(mActivity);
 			LightUtils.setScreenBrightness(mActivity, 255);
 
-			new TimeCount(60 * 1000 * 3, 1000).start();
+			new TimeCount(60 * 1000 * 5, 1000).start();
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
